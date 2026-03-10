@@ -1,12 +1,20 @@
 [project]
 name = "obsidian-summarizer"
-version = "0.1.0"
+version = "0.2.0"
 description = "Watch and process Obsidian clippings"
 requires-python = ">=3.10"
 dependencies = [
     "beautifulsoup4",
     "requests",
     "watchdog",
+    "yt-dlp",
+    "jinja2",
+    "pyyaml",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
 ]
 
 [project.scripts]
