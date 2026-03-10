@@ -1,0 +1,35 @@
+---
+title: "{{ title }}"
+source: "{{ source }}"
+author: "{{ author }}"
+published: "{{ published }}"
+created: "{{ created }}"
+tags:
+  - clipping
+  - resource
+  - processed
+---
+# {{ title }}
+
+## AI Summary
+
+{{ llm_summary }}
+
+## My Notes
+
+**Key takeaways:** what are the 1-3 most important things you learned?
+
+**Action items:** What specific actions or next steps does this inspire?
+
+**Questions & follow-up:** what questions does this raise? What should I research next?
+
+**Connections:** How does this relate to other things I know or are working on?
+
+**Quality assessment:** How accurate/useful was this? Would I recommend it to others?
+
+## Linked Projects/Domains
+
+```dataview
+list
+where contains(file.outlinks, this.file.link) and (contains(file.tags, "project") or contains(file.tags, "area") or contains(file.tags, "domain"))
+```
