@@ -1,0 +1,13 @@
+[project]
+name = "obsidian-summarizer"
+version = "0.1.0"
+description = "Watch and process Obsidian clippings"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4",
+    "requests",
+    "watchdog",
+]
+
+[project.scripts]
+obsidian-summarizer = "clipping_watcher:main"
