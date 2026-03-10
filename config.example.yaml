@@ -1,0 +1,12 @@
+paths:
+  clippings_dir: ~/Obsidian/Clippings
+  processed_dir: ~/Obsidian/Clippings/Processed
+
+llm:
+  provider: ollama            # "ollama" or "openai_compatible"
+  model: llama3.2:3b
+  base_url: http://localhost:11434
+  api_key: null               # Required for openai_compatible provider
+
+extraction:
+  min_content_length: 100     # Minimum characters to consider extraction successful
