@@ -91,7 +91,7 @@ graph TD
 
 User config is deep-merged with defaults — partial configs only override specified keys:
 
-```
+```text
 DEFAULT_CONFIG          config.yaml              Merged Result
 {                       {                        {
   llm: {                  llm: {                   llm: {
@@ -132,12 +132,12 @@ New providers implement `LLMProvider.summarize()` and register in `llm/factory.p
 
 Two Jinja2 templates share common sections but differ in their primary content:
 
-| Section | summary.md.j2 | failed_extraction.md.j2 |
-|---------|---------------|-------------------------|
-| Frontmatter | tags: processed | tags: needs-review |
-| Primary content | AI Summary (LLM response) | Failure notice + original excerpt |
-| My Notes | Prompts for manual annotation | Same |
-| Dataview query | Linked projects lookup | Same |
+| Section         | summary.md.j2                 | failed_extraction.md.j2           |
+| --------------- | ----------------------------- | --------------------------------- |
+| Frontmatter     | tags: processed               | tags: needs-review                |
+| Primary content | AI Summary (LLM response)     | Failure notice + original excerpt |
+| My Notes        | Prompts for manual annotation | Same                              |
+| Dataview query  | Linked projects lookup        | Same                              |
 
 ## Error Handling Strategy
 

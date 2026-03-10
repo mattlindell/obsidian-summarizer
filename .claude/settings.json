@@ -1,5 +1,6 @@
 {
   "enabledPlugins": {
-    "python-development@claude-code-workflows": true
+    "python-development@claude-code-workflows": true,
+    "code-documentation@claude-code-workflows": true
   }
 }
